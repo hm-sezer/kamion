@@ -34,7 +34,7 @@ export const VehicleColumn: React.FC<VehicleColumnProps> = ({ vehicle }) => {
       </span>
       <span className="flex flex-col justify-center">
         <span className="font-semibold text-[#0A2468] text-[11px]">{vehicle?.plate ? formatPlate(vehicle.plate) : '13 AS 199'}</span>
-        <span className="text-[11px] font-normal text-[#092256]">{vehicle?.info || '13.80 Kırkayak'}</span>
+        <span className="text-[11px] font-normal text-[#092256]">{vehicle?.type_value}</span>
       </span>
     </div>
   );
